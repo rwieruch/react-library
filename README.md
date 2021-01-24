@@ -29,7 +29,7 @@
 
 - The _/library_ is build with Webpack and Babel. However, Rollup is the most popular choice when it comes to libraries. So exchange Webpack with Rollup, but keep and use the _.babelrc_.
 
-## Code Splitting
+### Code Splitting
 
 - Webpack does code splitting at the moment. Rollup should do the same, so that the annotated // TODO imports in _/demo/src/App.js_ work.
 
