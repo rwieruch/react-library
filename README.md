@@ -40,3 +40,7 @@
 ### CSS Modules instead of Styled Components
 
 - Make _/library_ work with CSS Modules instead of TypeSript. The crucial file that needs to work is _/library/src/Data/Item/index.js_ with its _theme_ and _offset_. So injecting CSS from the outside needs to work (_theme_) and setting dynamic values (_offset_) should work too.
+
+### NPM Link
+
+- Use NPM linking, so that /library can be used like a library in /demo, but without installing it via npm.
