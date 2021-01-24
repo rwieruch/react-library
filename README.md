@@ -6,7 +6,7 @@
 
 - `git clone` this repository
 - first terminal: `cd demo && npm install && npm start`
-- second terminal: `cd library`
+- second terminal: `cd library && npm run library:build`
 
 ### Publish
 
