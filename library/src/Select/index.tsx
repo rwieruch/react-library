@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { SelectContext } from '../common/context';
 import { ISelectContext } from '../types';
+import styles from './styles.css';
 
 const SelectButton = ({
   id,
@@ -14,7 +15,11 @@ const SelectButton = ({
   );
 
   return (
-    <button type="button" onClick={() => toggleSelect!(id)}>
+    <button
+      type="button"
+      className={styles.red}
+      onClick={() => toggleSelect!(id)}
+    >
       {children}
     </button>
   );

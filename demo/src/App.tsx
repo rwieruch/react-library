@@ -21,11 +21,11 @@ const list = [
 
 const App = () => (
   <List>
-    {list.map((item) => (
+    {list.map((item, i) => (
       <Item
         key={item.id}
         id={item.id}
-        offset={24}
+        offset={24 * i + 1}
         theme={`
           &.selected {
             background-color: green;
