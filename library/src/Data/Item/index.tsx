@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { ISelectContext } from 'mh-react-library';
 import { SelectContext } from '../../common/context';
+import { ISelectContext } from '../../types';
 
 const Li = styled.li`
   &.selected {

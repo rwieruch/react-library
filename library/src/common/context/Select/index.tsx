@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ISelectContext } from 'mh-react-library';
+import { ISelectContext } from '../../../types';
 
 const SelectContext = React.createContext<ISelectContext>({});
 

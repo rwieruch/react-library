@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ISelectContext } from 'mh-react-library';
 import { SelectContext } from '../common/context';
+import { ISelectContext } from '../types';
 
 const SelectButton = ({
   id,

@@ -1,9 +1,11 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import babel from '@rollup/plugin-babel';
+// import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
-import typescript from '@rollup/plugin-typescript';
+// import typescript from '@rollup/plugin-typescript';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import pkg from './package.json';
+import ts from '@wessberg/rollup-plugin-ts';
 
 export default {
   input: {
@@ -35,6 +37,7 @@ export default {
     ...Object.keys(pkg.peerDependencies || {}),
   ],
   plugins: [
+    peerDepsExternal(),
     resolve({
       browser: true,
     }),
@@ -42,11 +45,15 @@ export default {
       sourceMap: true,
       exclude: 'src/**',
     }),
-    babel({
-      babelHelpers: 'runtime',
-      exclude: 'node_modules/**',
+
+    ts({
+      transpiler: 'babel',
     }),
-    typescript({ sourceMap: true }),
+    // babel({
+    //   babelHelpers: 'runtime',
+    //   exclude: 'node_modules/**',
+    // }),
+    // typescript({ sourceMap: true }),
     terser({
       module: true,
     }),
