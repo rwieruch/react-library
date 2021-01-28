@@ -1,6 +1,6 @@
 {
   "name": "mh-react-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mh-react-library",
   "main": "lib/main.js",
   "directories": {
