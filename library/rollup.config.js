@@ -21,7 +21,7 @@ export default {
       format: 'es',
       sourcemap: true,
       entryFileNames: '[name].js',
-      preserveModules: true,
+      // preserveModules: true,
     },
     // SystemJS version, for older browsers
     // {
