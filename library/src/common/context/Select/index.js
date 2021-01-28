@@ -5,13 +5,13 @@ const SelectContext = React.createContext({});
 const SelectProvider = ({ children }) => {
   const [selectedIds, setSelectedIds] = React.useState([]);
 
-  const toggleSelect = id => {
+  const toggleSelect = (id) => {
     if (selectedIds.includes(id)) {
-      setSelectedIds(state =>
-        state.filter(selectedId => selectedId !== id)
+      setSelectedIds((state) =>
+        state.filter((selectedId) => selectedId !== id)
       );
     } else {
-      setSelectedIds(state => state.concat(id));
+      setSelectedIds((state) => state.concat(id));
     }
   };
 
@@ -19,7 +19,7 @@ const SelectProvider = ({ children }) => {
     <SelectContext.Provider
       value={{
         selectedIds,
-        toggleSelect
+        toggleSelect,
       }}
     >
       {children}
