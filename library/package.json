@@ -1,7 +1,7 @@
 {
-  "name": "rwieruch-react-library",
+  "name": "mh-react-library",
   "version": "0.0.1",
-  "description": "rwieruch-react-library",
+  "description": "mh-react-library",
   "main": "lib/main.js",
   "directories": {
     "lib": "lib"
@@ -77,13 +77,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rwieruch/rwieruch-react-library.git"
+    "url": "git+https://github.com/mhatvan/mh-react-library.git"
   },
   "keywords": [],
-  "author": "Robin Wieruch <opensource@rwieruch.com> (https://www.robinwieruch.de)",
+  "author": "Markus Hatvan <contact@markushatvan.com> (https://markushatvan.com)",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/rwieruch/rwieruch-react-library/issues"
+    "url": "https://github.com/mhatvan/mh-react-library/issues"
   },
-  "homepage": "https://github.com/rwieruch/rwieruch-react-library#readme"
+  "homepage": "https://github.com/mhatvan/mh-react-library#readme"
 }
