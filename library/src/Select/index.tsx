@@ -1,11 +1,13 @@
 import * as React from 'react';
+
 import { SelectContext } from '../common/context';
 import { ISelectContext } from '../types';
+
 import styles from './styles.css';
 
 const SelectButton = ({
   id,
-  children,
+  children
 }: {
   id: string;
   children: React.ReactNode;

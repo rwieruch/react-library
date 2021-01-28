@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+
 import { SelectContext } from '../../common/context';
 import { ISelectContext } from '../../types';
 
@@ -17,7 +18,7 @@ const Item = ({
   id,
   offset = 0,
   theme,
-  children,
+  children
 }: {
   id: string;
   offset: number;
