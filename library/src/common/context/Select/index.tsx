@@ -1,11 +1,16 @@
 import * as React from 'react';
+import { ISelectContext } from 'mh-react-library';
 
-const SelectContext = React.createContext({});
+const SelectContext = React.createContext<ISelectContext>({});
 
-const SelectProvider = ({ children }) => {
-  const [selectedIds, setSelectedIds] = React.useState([]);
+const SelectProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  const [selectedIds, setSelectedIds] = React.useState<string[]>([]);
 
-  const toggleSelect = (id) => {
+  const toggleSelect = (id: string) => {
     if (selectedIds.includes(id)) {
       setSelectedIds((state) =>
         state.filter((selectedId) => selectedId !== id)

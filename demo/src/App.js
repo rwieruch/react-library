@@ -2,19 +2,19 @@ import * as React from 'react';
 
 // TODO: make this import work by using rollup and not webpack in /library
 
-import { List, Item, SelectButton } from 'rwieruch-react-library';
+import { List, Item, SelectButton } from 'mh-react-library';
 
 // TODO: make it work with these imports
 // TODO: the packages are built by the library
 // TODO: however, since the Context isn't shared across both bundles, it crashes
 
-// import { List, Item } from 'rwieruch-react-library/lib/data';
-// import { SelectButton } from 'rwieruch-react-library/lib/select';
+// import { List, Item } from 'mh-react-library/lib/data';
+// import { SelectButton } from 'mh-react-library/lib/select';
 
 // TODO: finally make it work without the extra /lib path
 
-// import { List, Item } from 'rwieruch-react-library/data';
-// import { SelectButton } from 'rwieruch-react-library/select';
+// import { List, Item } from 'mh-react-library/data';
+// import { SelectButton } from 'mh-react-library/select';
 
 const list = [
   {
